@@ -1,4 +1,6 @@
-<%= form_for @creature do |f| %>
+<h1>Create a Creature</h1>
+
+<%= form_for :creature,  url: {action: "create"} do |f| %>
 
     <%= f.text_field :name %>
     <%= f.text_area :description %>
